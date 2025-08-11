@@ -31,12 +31,11 @@ body {
   border-radius: 10px;
 }
 .img {
-  background-image: url('assets/images/personal.jpg');
+  background-image: url("assets/images/personal.jpg");
   width: 100px;
   height: 100px;
   background-size: cover;
   border-radius: 50%;
-
 }
 .Social {
   display: flex;
@@ -52,18 +51,26 @@ span {
 }
 a {
   width: 90%;
-  padding:14px;
+  padding: 14px;
   background-color: var(--grey-700);
   color: var(--white);
   border-radius: 10px;
- border: none;
- font-weight: bold;
- cursor: pointer;
- text-decoration: none;
- text-align: center;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
 }
 a:hover {
   color: black;
   background-color: var(--green);
 }
 
+@media screen and (max-width: 500px) {
+  body {
+    height: 100vh;
+  }
+  .wrapper {
+    width: 75%;
+  }
+}
